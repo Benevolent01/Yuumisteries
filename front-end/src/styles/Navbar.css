@@ -1,0 +1,97 @@
+.nav_1 {
+  height: 120px;
+  overflow: hidden;
+  background-color: red;
+  background: url("../src/assets/spacy.jpg");
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav_1 img {
+  width: 150px;
+  height: 65px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.nav_1 span {
+  color: white;
+  font: 28px Chalkduster, fantasy;
+}
+
+.input_1 {
+  display: flex;
+  height: var(--INPUT-HEIGHT);
+}
+
+.input_1 span {
+  background-color: var(--INPUT_BG_COLOR);
+  padding: var(--INPUT_PADDING);
+  color: var(--INPUT_COLOR);
+  border-top-left-radius: var(--INPUT_R_B);
+  border-bottom-left-radius: var(--INPUT_R_B);
+  display: flex;
+  align-items: center;
+  font: var(--INPUT-SPANS-FONT);
+}
+
+.input_1 button {
+  background-color: var(--INPUT_BG_COLOR);
+  padding: var(--INPUT_PADDING);
+  color: var(--INPUT_COLOR);
+  border-top-right-radius: var(--INPUT_R_B);
+  border-bottom-right-radius: var(--INPUT_R_B);
+  font: var(--INPUT-SPANS-FONT);
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.input_1 input {
+  border-right: none;
+}
+
+.input_1 input[type=text] {
+  font-size: var(--INPUT_FS);
+  /* padding: 20px 10px; */
+  padding: 0 15px;
+  padding-left: var(--INPUT-LEFT-PADDING);
+  font-weight: 400;
+  color: rgb(3, 3, 74);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.input_1 select {
+  border-left: none;
+  border-right: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+  appearance: none;
+  text-align: center;
+  padding-right: 5px;
+  background-color: none;
+}
+
+.fixOpt {
+  background-color: rgb(225, 224, 224)
+}
+
+.input_1 select,
+input {
+  border-top: var(--INPUT-INNER-BORDER);
+  border-bottom: var(--INPUT-INNER-BORDER);
+}
+
+@media (max-width: 900px) {
+  .nav_1 {
+    flex-direction: column;
+    height: fit-content;
+    padding: 30px;
+  }
+
+  .input_1 {
+    margin: 20px;
+  }
+}

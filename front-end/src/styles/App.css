@@ -1,0 +1,53 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+body {
+  height: 100%;
+}
+
+/* 
+
+VARIABLES
+
+*/
+
+:root {
+  /* Height of the input */
+  --INPUT-HEIGHT: 55px;
+  /* Background color of input */
+  --INPUT_BG_COLOR: black;
+  /* Edges input padding*/
+  --INPUT_PADDING: 10px;
+  /* Spans Input Color */
+  --INPUT_COLOR: rgb(45, 233, 180);
+  /* Spans Border Radius*/
+  --INPUT_R_B: 30px;
+  /* Input Font Size*/
+  --INPUT_FS: 18px;
+  --INPUT-INNER-BORDER: 1px solid black;
+  --INPUT-LEFT-PADDING: 10px;
+  /* */
+  --INPUT-SPANS-FONT: 700 18px monospace;
+
+  /* Table Borders */
+  --TABLE-BORDERS: 1px solid rgb(177, 166, 166);
+}
+
+input,
+select {
+  outline: none;
+}
