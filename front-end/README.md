@@ -4,8 +4,8 @@ Yuumisteries was designed with [Create React App](https://create-react-app.dev/d
 
 It's a short League of Legends project-analyser of a player's current masteries.
 
-<img src="./src/assets/screenshot1.png" style="width: 100vw; height: 100%; object-fit: cover;"/>
-<img src="./src/assets/screenshot2.png" style="width: 25vw; height: 100%; object-fit: cover;"/>
+<img src="./public/assets/screenshot1.png" style="width: 100vw; height: 100%; object-fit: cover;"/>
+<img src="./public/assets/screenshot2.png" style="width: 25vw; height: 100%; object-fit: cover;"/>
 
 After configuring the .env file in the backend with the desired ROUTE & the riot API key you can:
 

@@ -1,28 +1,25 @@
-import { UPDATE_ALL_INFO } from "../actions";
+import { UPDATE_ACCOUNT_INFO, UPDATE_MASTERIES, UPDATE_RANKS } from "../actions";
 
 let initialState = {
   account: {
     name: "",
     summonerLevel: "",
-    profileIconId: 29,
+    profileIconId: null,
     revisionDate: "",
   },
-  masteriesRes: {
-    data: [],
-    totalMasteries: null,
-    totalPoints: null,
-    chestsAvailable: null,
-  },
-  rankRes: [],
+  masteries: [],
+  ranks: [],
 };
 
-let f = (state = initialState, action) => {
+export default (state = initialState, action) => {
   switch (action.type) {
-    case UPDATE_ALL_INFO:
-      return action.data;
+    case UPDATE_ACCOUNT_INFO:
+      return { ...state, account: action.account };
+    case UPDATE_RANKS:
+      return { ...state, ranks: action.ranks };
+    case UPDATE_MASTERIES:
+      return { ...state, masteries: action.masteries };
     default:
       return state;
   }
-}
-
-export default f;
+};

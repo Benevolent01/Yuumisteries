@@ -52,18 +52,18 @@
   border-right: none;
 }
 
-.input_1 input[type=text] {
+.input_1 input[type="text"] {
   font-size: var(--INPUT_FS);
   /* padding: 20px 10px; */
   padding: 0 15px;
   padding-left: var(--INPUT-LEFT-PADDING);
   font-weight: 400;
   color: rgb(3, 3, 74);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .input_1 select {
-  border-left: none;
+  border-left: 1px solid black;
   border-right: none;
   cursor: pointer;
   outline: none;
@@ -75,7 +75,7 @@
 }
 
 .fixOpt {
-  background-color: rgb(225, 224, 224)
+  background-color: rgb(225, 224, 224);
 }
 
 .input_1 select,

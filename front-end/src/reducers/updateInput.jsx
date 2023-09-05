@@ -6,7 +6,7 @@ let initialState = {
   server: VALID_SERVERS[0],
 };
 
-let f = (state = initialState, action) => {
+export default (state = initialState, action) => {
   switch (action.type) {
     case UPDATE_SUMMONER_INPUT:
       return { ...state, summoner: action.summoner };
@@ -15,6 +15,4 @@ let f = (state = initialState, action) => {
     default:
       return state;
   }
-}
-
-export default f;
+};

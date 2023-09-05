@@ -1,16 +1,22 @@
 const express = require("express");
-const app = express();
 const cors = require("cors");
-require("dotenv").config();
-const dataPoint = require("./api");
-app.use(express.json())
-app.use(require("body-parser").urlencoded({extended: false}))
-app.use(cors());
+const { log } = require("./routes/common");
+let app = express();
 
 const PORT = process.env.ROUTE_PORT || 4000;
+require("dotenv").config();
 
-app.use(express.json());
+let startServer = async () => {
+  try {
+    app = express();
+    app.use(express.json());
+    app.use(cors());
+    app.use("/", require("./routes"));
+    app.listen(PORT);
+    log(`Server is now running in port ${PORT}...`);
+  } catch (e) {
+    log(e);
+  }
+};
 
-app.use("/api", dataPoint);
-
-app.listen(PORT, () => console.log(`Now listening in http://localhost:${PORT}`));
+if (require.main === module) startServer();
